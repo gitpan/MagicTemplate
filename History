@@ -1,0 +1,121 @@
+MagicTemplate Latest Versions Changes
+
+Version 3.45
+- New prerequisites: perl 5.6.1 and ObjectTools 1.0
+- Added include_template() Zone method and relative 'How to' example
+- Use of ObjectTools pragmas in the ::Zone class
+- Fixed a bug caused by user subs that returned an undef value
+- Fixed a no_cache bug
+- Several internal code adjustments
+- Main distribution renamed from Text::MagicTemplate to MagicTemplate
+- Renamed Bundle::Text::MagicTemplate to Bundle::MagicTemplate
+- Simplified Author and Copyright section ;-)
+- Fixed a typo in the SYNOPSIS
+
+Version 3.44
+- Improved POD
+- Fixed exporting for HTML::MagicTemplate
+
+Version 3.43
+- Added exporting of constants NEXT_HANDLER and LAST_HANDLER
+
+Version 3.42
+- Changed coding style
+
+Version 3.41
+- Code cleanup
+- Updated POD
+
+Version 3.4 (not published)
+- Added noutput(), nprint() and load() methods
+- Added 'options' constructor array with cache/no_cache options
+- Added '-compile' pragma to compile some or all the handlers.al at import
+- Added 'is_main' zone property
+- Deprecated get_block() and set_block() methods
+- Fixed minor bugs
+
+Version 3.3 (not published)
+- Fixed all warnings
+- The distribution now includes HTML::MagicTemplate package,
+  installable without prerequisites: the Bundle::Text::MagicTemplate
+  installs the prerequisites
+- Discontinued the print static method capability (use new->print(temp) instead)
+- Discontinued the print [identifier] capability
+- Added the possibility to pass arguments to the 'CODE' handler, through the
+  'DEFAULT_VALUE_HANDLERS' and the 'HTML_VALUE_HANDLERS'
+- Optimized template structure and caching
+- Added purge_cache method
+- Optimized RE compiling
+- Moved code from AUTOLOAD sub to BEGIN block in Zone package
+- Several code cleanup/speedup
+- Fixed POD for ID_list method
+
+Version 3.2
+- Fixed the CPAN indexer problem that caused a recursive dependency
+  during the installation (thanks to Michael G Schwern)
+- Improved the include template process: now it avoids multiple caching
+  of the same included file content
+- Added _t zone property
+- Minor changes in the internal rapresentation and storage of templates
+
+Version 3.14
+- Improved POD
+
+Version 3.13
+- Improved "HOW TO..." POD section
+- Added "EFFICIENCY" section
+- Minor fixes
+
+Version 3.12
+- Minor fixes
+
+Version 3.11
+- Minor fixes
+
+Version 3.1
+- Added automatic caching of multiple templates
+- New lookup system that accepts an identifier as parameter
+- Old 'zone_lookup' property removed
+- Zone object method 'content_process()' substitutes the deprecated 'merge()'
+- Improved internal rapresentation and storage of templates
+- Improved POD
+
+Version 3.05
+- New efficient and fast internal representation and storage of templates.
+- Added 'INCLUDE_TEXT' standard zone handler
+- Added 'INCLUDE_TEMPLATE' standard lablel as an alias of old include lables
+- Improved POD
+
+Version 3.04
+- Pure OO code rewriting
+
+Version 3.03
+- A rare handler inheritance bug fixed
+
+Version 3.01 (not published)
+- Introduced new constructor interface without prepended '-' for
+  constructor arrays, and without brackets. The old interface is still working
+  for backward compatibility.
+- Dynamic zone lookups
+- Improved AUTOLOAD sub: you can set lvalue zone properties both way:
+  $z->prop='val' or $z->prop('val')
+- Improved POD
+- Introduced Version head in POD.
+
+Version 3.0 (not published)
+- Almost complete rewriting of the code: it does things straight and it is
+  simpler to understand and maintain
+- Standar handlers are code commented (just a little bit ;-)
+- New file structure: joined a lot of files in just 2 files + Bundle
+- New POD structure, simpler to read
+- Eliminated the extension system: now the modules relay on the
+  canonical AutoLoader module
+- Added several constructor arrays to allow even more customization
+  in different time of the process
+- Added several zone properties and a new left value AUTOLOAD sub
+- Added '_EVAL_ATTRIBUTES_' and 'TRACE_DELETION' standard zone handlers
+- Eliminated in place search and substitution (it was almost useless)
+- Increased memory efficiency: now the execution takes less memory
+
+
+

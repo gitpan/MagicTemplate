@@ -1,0 +1,17 @@
+use ExtUtils::MakeMaker;
+
+WriteMakefile
+   ( NAME             => 'MagicTemplate'
+   , VERSION_FROM     => 'lib/Text/MagicTemplate.pm'
+   , ( $] ge '5.005' )
+     ? ( 'AUTHOR'     => 'Domizio Demichelis <dd\@4pro.net>'
+       , 'ABSTRACT'   => 'Magic merger of runtime values with templates'
+       )
+     : ()
+   , PREREQ_PM        => { 'Class::constr'     => '1.31'
+                         , 'Class::props'      => '1.31'
+                         , 'Object::props'     => '1.31'
+                         }
+   );
+
+
