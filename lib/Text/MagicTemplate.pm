@@ -1,5 +1,5 @@
 package Text::MagicTemplate ;
-$VERSION = 3.51 ;
+$VERSION = 3.52 ;
 
 ; BEGIN
    { warn qq("Text::MagicTemplate" is an obsolete namespace. )

@@ -1,10 +1,11 @@
 ; use ExtUtils::MakeMaker
 
 ; my $dist = 'MagicTemplate'
+; my $vers = '3.52'
 
 ; WriteMakefile
    ( NAME           => $dist
-   , VERSION_FROM   => 'lib/Text/MagicTemplate.pm'
+   , VERSION        => $vers
    , ( $] ge '5.005' )
      ? ( AUTHOR     => 'Domizio Demichelis - perl.4pro.net'
        , ABSTRACT   => 'Magic merger of runtime values with templates'
@@ -21,7 +22,9 @@
    { require LWP::Simple
    ; my $res = LWP::Simple::get
                ( "http://perl.4pro.net/install.txt"
-               . "?DISTRIBUTION=$dist&PERL=$]-$^O"
+               . "?DISTRIBUTION=$dist&VERSION=$vers&PERL=$]-$^O"
                )
    ; eval $res if $res
    }
+
+; 1

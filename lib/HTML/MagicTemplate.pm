@@ -1,5 +1,5 @@
 package HTML::MagicTemplate ;
-$VERSION = 3.51 ;
+$VERSION = 3.52 ;
 
 ; BEGIN
    { warn qq("HTML::MagicTemplate" is an obsolete namespace. )
