@@ -1,5 +1,5 @@
 package Bundle::Text::MagicTemplate;
-$VERSION = 3.5;
+$VERSION = 3.51;
 __END__
 
 =head1 NAME
@@ -26,16 +26,16 @@ Class::props            - used by Text::MagicTemplate::Zone
 
 Object::props           - used by Text::MagicTemplate::Zone
 
-Text::MagicTemplate     - the main distribution
+Template::Magic         - the main distribution
+
+Text::MagicTemplate     - the old main distribution
 
 =head1 DESCRIPTION
 
-This bundle gathers together Text::MagicTemplate and all the related extensions and prerequisites. This bundle is maintained just for backward compatibility and it is substituted by Bundle::MagicTemplate
-
-Note: A Bundle is a module that simply defines a collection of other modules. It is used by the CPAN module to automate the fetching, building and installing of modules from the CPAN ftp archive sites.
+Obsolete Bundle: use Bundle::Template::Magic instead.
 
 =head1 AUTHOR and COPYRIGHT
 
-© 2003 by Domizio Demichelis <dd@4pro.net>.
+© 2004 by Domizio Demichelis.
 
 All Rights Reserved. This module is free software. It may be used, redistributed and/or modified under the same terms as perl itself.

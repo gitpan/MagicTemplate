@@ -5,29 +5,16 @@ MagicTemplate README File
 Description
 -----------
 
-MagicTemplate is a "magic" interface between programming and design. It makes
-"magically" available all the runtime values - stored in your variables or
-returned by your subroutines - inside a static template file. Usually no need to
-assign values to the object.
+Obsolete distribution maintained for backward compatibility. Use Template::Magic instead.
 
-
-Structure
----------
-
-This is the general three of the Text::MagicTemplate system
-
-    Bundle::MagicTemplate        a bundle to install everything in one step
-    Text::MagicTemplate          the main module
-    Text::MagicTemplate::Zone    defines the zone object
-    HTML::MagicTemplate          handlers useful in HTML environment
-
-    
+   
 Installation
 ------------
 
 0.  Prerequisites:
-- Perl version 5.6.1 or more recent
-- ObjectTools 1.0
+- Perl version 5.6.1
+- OOTools 1.5
+- Template::Magic 1.0
 
 
 
@@ -60,5 +47,5 @@ the following files and directories (sorry, no automatic uninstallation yet):
     Text/MagicTemplateX directory including all its content
 
 --
-Domizio Demichelis <dd@4pro.net>
-2003-12-18
+Domizio Demichelis perl.4pro.net
+2004-01-01
