@@ -1,5 +1,5 @@
 package Bundle::Text::MagicTemplate;
-$VERSION = 3.52;
+$VERSION = 3.53;
 __END__
 
 =head1 NAME
@@ -32,7 +32,7 @@ Text::MagicTemplate     - the old main distribution
 
 =head1 DESCRIPTION
 
-Obsolete Bundle: use Bundle::Template::Magic instead.
+Deprecated Bundle: use Bundle::Template::Magic instead.
 
 =head1 AUTHOR and COPYRIGHT
 

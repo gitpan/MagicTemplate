@@ -1,8 +1,8 @@
 package Text::MagicTemplate ;
-$VERSION = 3.52 ;
+$VERSION = 3.53 ;
 
 ; BEGIN
-   { warn qq("Text::MagicTemplate" is an obsolete namespace. )
+   { warn qq("Text::MagicTemplate" is an deprecated module. )
         . qq(You should use "Template::Magic" instead\n)
           if $^W
    }
@@ -15,11 +15,11 @@ __END__
 
 =head1 NAME
 
-Text::MagicTemplate - Obsolete alias for Template::Magic
+Text::MagicTemplate - Deprecated module: use Template::Magic instead
                                  
 =head1 DESCRIPTION
 
-Obsolete namespace maintained for backward compatibility. Use Template::Magic instead.
+Deprecated module maintained for backward compatibility. Use Template::Magic instead.
 
 =head1 AUTHOR and COPYRIGHT
 

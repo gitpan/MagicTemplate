@@ -1,8 +1,8 @@
 package Text::MagicTemplate::Zone ;
-$VERSION = 3.52 ;
+$VERSION = 3.53 ;
 
 ; BEGIN
-   { warn qq("Text::MagicTemplate::Zone" is an obsolete namespace. )
+   { warn qq("Text::MagicTemplate::Zone" is a deprecated module. )
         . qq(You should use "Template::Magic::Zone" instead\n)
           if $^W
    }
@@ -15,11 +15,11 @@ __END__
 
 =head1 NAME
 
-Text::MagicTemplate::Zone - Obsolete alias for Template::Magic::Zone
+Text::MagicTemplate::Zone - Deprecated module: use Template::Magic::Zone instead
                                  
 =head1 DESCRIPTION
 
-Obsolete namespace maintained for backward compatibility. Use Template::Magic::Zone instead.
+Deprecated module maintained for backward compatibility. Use Template::Magic::Zone instead.
 
 =head1 AUTHOR and COPYRIGHT
 

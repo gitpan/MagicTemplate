@@ -1,8 +1,8 @@
 package HTML::MagicTemplate ;
-$VERSION = 3.52 ;
+$VERSION = 3.53 ;
 
 ; BEGIN
-   { warn qq("HTML::MagicTemplate" is an obsolete namespace. )
+   { warn qq("HTML::MagicTemplate" is a deprecated module. )
         . qq(You should use "Template::Magic::HTML" instead\n)
           if $^W
    ; *NEXT_HANDLER           = *Template::Magic::NEXT_HANDLER
@@ -18,11 +18,11 @@ __END__
 
 =head1 NAME
 
-HTML::MagicTemplate - Obsolete alias for Template::Magic::HTML
+HTML::MagicTemplate - Deprecated module: use Template::Magic::HTML instead
                                  
 =head1 DESCRIPTION
 
-Obsolete namespace maintained for backward compatibility. Use Template::Magic::HTML instead.
+Deprecated module maintained for backward compatibility. Use Template::Magic::HTML instead.
 
 =head1 AUTHOR and COPYRIGHT
 
